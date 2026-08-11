@@ -63,9 +63,9 @@ export const OverviewView: React.FC = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 leading-none">{stat.value}</h4>
+                <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-55 leading-none">{stat.value}</h4>
                 <div className="flex items-center gap-1 mt-2">
-                  <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
+                  <span className={`text-xs font-semibold px-1.5 py-0.5 rounded-full ${
                     stat.trend === 'up' && stat.label.includes('Time')
                       ? 'text-rose-600 bg-rose-50 dark:text-rose-400 dark:bg-rose-950/20'
                       : stat.trend === 'down' && stat.label.includes('Time')
@@ -89,8 +89,8 @@ export const OverviewView: React.FC = () => {
         <div className="lg:col-span-2 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex flex-col shadow-xs">
           <div className="flex items-center justify-between pb-4 border-b border-zinc-100 dark:border-zinc-900">
             <div>
-              <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-50">Conversation Activity</h4>
-              <p className="text-[11px] text-zinc-400 dark:text-zinc-500">Volume of customer requests vs. automated resolutions</p>
+              <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-55">Conversation Activity</h4>
+              <p className="text-xs text-zinc-450 dark:text-zinc-500">Volume of customer requests vs. automated resolutions</p>
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400">
@@ -145,7 +145,7 @@ export const OverviewView: React.FC = () => {
               <circle cx="300" cy="90" r="4.5" fill="#6366f1" stroke="#fff" strokeWidth="2" className="dark:stroke-zinc-950" />
             </svg>
           </div>
-          <div className="flex justify-between items-center px-2 text-[10px] text-zinc-400 dark:text-zinc-500 font-medium mt-2">
+          <div className="flex justify-between items-center px-2 text-xs text-zinc-450 dark:text-zinc-500 font-medium mt-2">
             <span>Aug 06</span>
             <span>Aug 07</span>
             <span>Aug 08</span>
@@ -159,8 +159,8 @@ export const OverviewView: React.FC = () => {
         {/* Top Issues List */}
         <div className="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex flex-col shadow-xs">
           <div>
-            <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-50">Top Issue Categories</h4>
-            <p className="text-[11px] text-zinc-400 dark:text-zinc-500">Most frequent topics needing response</p>
+            <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-55">Top Issue Categories</h4>
+            <p className="text-xs text-zinc-450 dark:text-zinc-505">Most frequent topics needing response</p>
           </div>
           <div className="mt-5 space-y-4 flex-1">
             {topIssues.map((issue, idx) => (
@@ -231,10 +231,10 @@ export const OverviewView: React.FC = () => {
                       className="w-7 h-7 rounded-full object-cover border border-zinc-200 dark:border-zinc-800"
                     />
                     <div>
-                      <span className="font-semibold text-zinc-900 dark:text-zinc-100 block group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      <span className="font-semibold text-sm text-zinc-900 dark:text-zinc-100 block group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                         {conv.customerName}
                       </span>
-                      <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium">
+                      <span className="text-xs text-zinc-450 dark:text-zinc-500 font-medium">
                         {conv.customerEmail}
                       </span>
                     </div>
@@ -255,12 +255,12 @@ export const OverviewView: React.FC = () => {
                   </td>
                   <td className="py-3 px-4">
                     {conv.status === 'resolved' || conv.id === 'conv_3' || conv.id === 'conv_10' ? (
-                      <span className="inline-flex items-center gap-1 text-[11px] font-medium text-indigo-600 dark:text-indigo-400">
+                      <span className="inline-flex items-center gap-1 text-xs font-medium text-indigo-600 dark:text-indigo-400">
                         <Sparkles className="w-3 h-3 fill-current shrink-0" />
                         AI Helper
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1 text-[11px] font-medium text-zinc-500 dark:text-zinc-400">
+                      <span className="inline-flex items-center gap-1 text-xs font-medium text-zinc-550 dark:text-zinc-450">
                         <UserCheck className="w-3 h-3 shrink-0" />
                         Human
                       </span>
