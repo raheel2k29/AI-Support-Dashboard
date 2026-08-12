@@ -22,7 +22,7 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
-  const { activeTab, setActiveTab, conversations, settings } = useApp();
+  const { activeTab, setActiveTab, conversations, settings, theme } = useApp();
 
   const navItems = [
     { id: 'overview', label: 'Overview', icon: LayoutDashboard },
@@ -52,9 +52,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         <div className="p-4 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img 
-              src="/logo.png" 
+              src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'} 
               alt="AssistlyAI" 
-              className="h-10 object-contain bg-white dark:bg-white p-1 rounded-xl border border-zinc-200 dark:border-zinc-100/50 shadow-xs" 
+              className="h-10 object-contain" 
             />
           </div>
           <button className="p-1 rounded-md text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-600 dark:hover:text-zinc-200">
