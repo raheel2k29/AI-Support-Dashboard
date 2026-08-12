@@ -20,7 +20,7 @@ export const Topbar: React.FC<TopbarProps> = ({ onOpenSidebar }) => {
       case 'kb': return 'Knowledge Base';
       case 'analytics': return 'Analytics';
       case 'settings': return 'Settings';
-      default: return 'SupportAI';
+      default: return 'AssistlyAI';
     }
   };
 

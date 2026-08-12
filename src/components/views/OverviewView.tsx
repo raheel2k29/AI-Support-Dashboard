@@ -35,7 +35,7 @@ export const OverviewView: React.FC = () => {
             Welcome back, Raheel ⚡
           </h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-            SupportAI has auto-resolved <strong className="font-semibold text-zinc-700 dark:text-zinc-200">842 tickets</strong> this billing period.
+            AssistlyAI has auto-resolved <strong className="font-semibold text-zinc-700 dark:text-zinc-200">842 tickets</strong> this billing period.
           </p>
         </div>
         <button 

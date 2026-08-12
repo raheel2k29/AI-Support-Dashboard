@@ -50,18 +50,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       >
         {/* Logo / Workspace Selection */}
         <div className="p-4 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold shadow-md shadow-indigo-600/20">
-              {settings.companyLogo || "⚡"}
-            </div>
-            <div>
-              <h1 className="font-semibold text-zinc-900 dark:text-zinc-50 leading-tight">
-                SupportAI
-              </h1>
-              <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium">
-                {settings.workspaceName}
-              </span>
-            </div>
+          <div className="flex items-center gap-2">
+            <img 
+              src="/logo.png" 
+              alt="AssistlyAI" 
+              className="h-10 object-contain bg-white dark:bg-white p-1 rounded-xl border border-zinc-200 dark:border-zinc-100/50 shadow-xs" 
+            />
           </div>
           <button className="p-1 rounded-md text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-600 dark:hover:text-zinc-200">
             <ChevronDown className="w-4 h-4" />

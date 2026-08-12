@@ -483,7 +483,7 @@ export const mockArticles: KBArticle[] = [
     status: "published",
     lastUpdated: "Aug 04, 2026",
     views: 932,
-    content: "SupportAI plans are billed on a monthly or annual cycle. We accept all major credit cards. You can view invoice receipts, change plans, add billing contacts, or download monthly financial statements from the Billing tab in Settings. Upgrades are prorated immediately, while downgrades apply at the start of your next billing cycle."
+    content: "AssistlyAI plans are billed on a monthly or annual cycle. We accept all major credit cards. You can view invoice receipts, change plans, add billing contacts, or download monthly financial statements from the Billing tab in Settings. Upgrades are prorated immediately, while downgrades apply at the start of your next billing cycle."
   },
   {
     id: "kb_3",
@@ -510,7 +510,7 @@ export const mockArticles: KBArticle[] = [
     status: "published",
     lastUpdated: "Jun 15, 2026",
     views: 890,
-    content: "SupportAI lets you stream conversations logs in real-time. Head to Settings > Integrations and type your target endpoint in the Webhooks list. We sign payloads with SHA-256 signatures headers. Webhooks that fail with 5xx statuses are retried using exponential backoffs for up to 24 hours before status is marked dead."
+    content: "AssistlyAI lets you stream conversations logs in real-time. Head to Settings > Integrations and type your target endpoint in the Webhooks list. We sign payloads with SHA-256 signatures headers. Webhooks that fail with 5xx statuses are retried using exponential backoffs for up to 24 hours before status is marked dead."
   },
   {
     id: "kb_6",
@@ -519,7 +519,7 @@ export const mockArticles: KBArticle[] = [
     status: "published",
     lastUpdated: "May 22, 2026",
     views: 1104,
-    content: "If support replies are not reaching customers, verify your custom SPF, DKIM, and DMARC DNS settings on your domain registrar. Ensure you have authorized mailers.supportai.com. You can also view failed delivery trace codes directly inside our outbound queue log viewer in Settings."
+    content: "If support replies are not reaching customers, verify your custom SPF, DKIM, and DMARC DNS settings on your domain registrar. Ensure you have authorized mailers.assistlyai.com. You can also view failed delivery trace codes directly inside our outbound queue log viewer in Settings."
   },
   {
     id: "kb_7",
@@ -558,7 +558,7 @@ export const mockArticles: KBArticle[] = [
     content: "This guide explains the AI Auto-resolve feature. The auto-resolution mechanism automatically marks questions solved if the client states positive confirmation, or if a generated reply scores above 95% confidence matching index on key terms, without a follow-up query after 4 hours."
   },
   { id: "kb_11", title: "API Rate limits and quotas", category: "Integrations & API", status: "published", lastUpdated: "Jan 12, 2026", views: 320, content: "Our REST APIs allow up to 100 requests per minute on Pro and 1000 requests per minute on Enterprise. Authenticate using Bearer tokens." },
-  { id: "kb_12", title: "Custom domain forwarding setup", category: "Customizations", status: "published", lastUpdated: "Feb 10, 2026", views: 241, content: "CNAME your support domain to domains.supportai.com to host articles on support.yourbrand.com." },
+  { id: "kb_12", title: "Custom domain forwarding setup", category: "Customizations", status: "published", lastUpdated: "Feb 10, 2026", views: 241, content: "CNAME your support domain to domains.assistlyai.com to host articles on support.yourbrand.com." },
   { id: "kb_13", title: "Connecting Slack integration", category: "Integrations & API", status: "published", lastUpdated: "Mar 11, 2026", views: 532, content: "Receive instant escalation alerts in your Slack channels and reply to customers directly from Slack." },
   { id: "kb_14", title: "Configuring business hours & SLAs", category: "AI Rules", status: "published", lastUpdated: "Jun 02, 2026", views: 198, content: "Define operating hours to trigger custom human-handoff rules when agents are offline." },
   { id: "kb_15", title: "Spam filtering & blocking users", category: "Troubleshooting", status: "published", lastUpdated: "Jul 05, 2026", views: 110, content: "Block spam domains and configure custom capture rules to prevent tickets spam." }
@@ -597,7 +597,7 @@ export const aiConversationalReplies: Record<string, string[]> = {
     "Hey Alex! It looks like your webhook endpoint is hitting a timeout. I can delay retry intervals or whitelist your server IPs if that helps route traffic faster."
   ],
   "conv_4": [
-    "Hi David, yes, SupportAI supports static dedicated outbound IPs on our Enterprise plan. This allows you to whitelist specific proxy endpoints in your firewall. I've sent the proxy routing table to your email. Would you like me to connect you with an account manager to provision this?",
+    "Hi David, yes, AssistlyAI supports static dedicated outbound IPs on our Enterprise plan. This allows you to whitelist specific proxy endpoints in your firewall. I've sent the proxy routing table to your email. Would you like me to connect you with an account manager to provision this?",
     "Hello David. Static dedicated outbound IPs are available as a network add-on for Enterprise tier customers. Let me know if you would like to enable the trial."
   ],
   "conv_5": [

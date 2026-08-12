@@ -65,7 +65,7 @@ export const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   // Load theme from settings / localStorage on mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem('supportai-theme') as 'light' | 'dark' | null;
+    const savedTheme = localStorage.getItem('assistlyai-theme') as 'light' | 'dark' | null;
     const finalTheme = savedTheme || settings.appearance || 'dark';
     setTheme(finalTheme as 'light' | 'dark');
     if (finalTheme === 'dark') {
@@ -94,7 +94,7 @@ export const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const toggleTheme = () => {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(nextTheme);
-    localStorage.setItem('supportai-theme', nextTheme);
+    localStorage.setItem('assistlyai-theme', nextTheme);
     if (nextTheme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
