@@ -233,7 +233,7 @@ export const ConversationsView: React.FC = () => {
                   <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-white dark:border-zinc-950" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-zinc-900 dark:text-zinc-55 leading-none">
+                  <h4 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-none">
                     {activeConversation.customerName}
                   </h4>
                   <span className="text-xs text-zinc-450 dark:text-zinc-500 font-medium mt-1 inline-block">
@@ -253,7 +253,7 @@ export const ConversationsView: React.FC = () => {
                 {activeConversation.status !== 'resolved' && (
                   <button
                     onClick={() => resolveConversation(activeConversation.id)}
-                    className="px-2.5 py-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20 hover:bg-emerald-100 dark:hover:bg-emerald-955/40 rounded-lg transition-colors"
+                    className="px-2.5 py-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20 hover:bg-emerald-100 dark:hover:bg-emerald-950/40 rounded-lg transition-colors"
                   >
                     Mark Resolved
                   </button>
@@ -442,7 +442,7 @@ export const ConversationsView: React.FC = () => {
             <h4 className="text-sm font-bold text-zinc-900 dark:text-zinc-50 mt-3 leading-none">
               {activeConversation.customerName}
             </h4>
-            <span className="text-[10px] text-zinc-400 dark:text-zinc-550 font-medium mt-1">
+            <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium mt-1">
               {activeConversation.customerEmail}
             </span>
           </div>
@@ -475,14 +475,14 @@ export const ConversationsView: React.FC = () => {
                   <Calendar className="w-3.5 h-3.5" />
                   Customer since
                 </span>
-                <span className="font-semibold text-zinc-700 dark:text-zinc-350">{activeConversation.customerSince}</span>
+                <span className="font-semibold text-zinc-700 dark:text-zinc-300">{activeConversation.customerSince}</span>
               </div>
               <div className="flex justify-between items-center py-1">
                 <span className="text-zinc-400 dark:text-zinc-500 font-medium flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5" />
                   Last active
                 </span>
-                <span className="font-semibold text-zinc-700 dark:text-zinc-355">{activeConversation.lastActive}</span>
+                <span className="font-semibold text-zinc-700 dark:text-zinc-300">{activeConversation.lastActive}</span>
               </div>
             </div>
           </div>

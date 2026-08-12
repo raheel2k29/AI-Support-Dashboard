@@ -80,7 +80,7 @@ export const SettingsView: React.FC = () => {
                 <select
                   value={settings.language}
                   onChange={(e) => updateSettings({ language: e.target.value })}
-                  className="w-full px-3 py-2 text-xs bg-white dark:bg-zinc-955 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
+                  className="w-full px-3 py-2 text-xs bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
                 >
                   <option value="en-US">English (United States)</option>
                   <option value="fr-FR">Français (French)</option>
@@ -124,7 +124,7 @@ export const SettingsView: React.FC = () => {
                 <select
                   value={settings.aiTone}
                   onChange={(e) => updateSettings({ aiTone: e.target.value as any })}
-                  className="w-full px-3 py-2 text-xs bg-white dark:bg-zinc-955 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
+                  className="w-full px-3 py-2 text-xs bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
                 >
                   <option value="friendly">Friendly & Supportive</option>
                   <option value="professional">Professional & Technical</option>
@@ -146,7 +146,7 @@ export const SettingsView: React.FC = () => {
                   onChange={(e) => updateSettings({ handoffThreshold: parseInt(e.target.value) })}
                   className="w-full accent-indigo-600 cursor-pointer h-1 rounded-full bg-zinc-200 dark:bg-zinc-800"
                 />
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-505 block">
+                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 block">
                   Automatically escalates to a human operator when the AI confidence score drops below this limit.
                 </span>
               </div>

@@ -73,7 +73,7 @@ export const KBView: React.FC = () => {
           return (
             <div key={idx} className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex items-center justify-between shadow-xs">
               <div>
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-505 font-semibold block">{stat.label}</span>
+                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold block">{stat.label}</span>
                 <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mt-1">{stat.value}</h4>
               </div>
               <div className={`p-2 rounded-xl shrink-0 ${stat.color}`}>
@@ -143,7 +143,7 @@ export const KBView: React.FC = () => {
               {filteredArticles.map((art) => (
                 <tr key={art.id} className="hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors">
                   <td className="py-3.5 px-6">
-                    <span className="font-semibold text-zinc-900 dark:text-zinc-55 block">
+                    <span className="font-semibold text-zinc-900 dark:text-zinc-100 block">
                       {art.title}
                     </span>
                     <p className="text-[10px] text-zinc-450 dark:text-zinc-500 truncate max-w-xs mt-1">
@@ -232,7 +232,7 @@ export const KBView: React.FC = () => {
                 <select
                   value={editCategory}
                   onChange={(e) => setEditCategory(e.target.value)}
-                  className="w-full px-3 py-2 text-xs bg-zinc-50 dark:bg-zinc-955 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
+                  className="w-full px-3 py-2 text-xs bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
                 >
                   {categories.filter(c => c !== 'all').map((cat, idx) => (
                     <option key={idx} value={cat}>{cat}</option>
@@ -241,11 +241,11 @@ export const KBView: React.FC = () => {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-[10px] font-bold text-zinc-450 dark:text-zinc-500 uppercase tracking-wider">Status</label>
+                <label className="text-[10px] font-bold text-zinc-455 dark:text-zinc-500 uppercase tracking-wider">Status</label>
                 <select
                   value={editStatus}
                   onChange={(e) => setEditStatus(e.target.value as 'published' | 'draft')}
-                  className="w-full px-3 py-2 text-xs bg-zinc-50 dark:bg-zinc-955 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
+                  className="w-full px-3 py-2 text-xs bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-700 dark:text-zinc-300"
                 >
                   <option value="published">Published</option>
                   <option value="draft">Draft</option>
@@ -254,12 +254,12 @@ export const KBView: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label className="text-[10px] font-bold text-zinc-450 dark:text-zinc-500 uppercase tracking-wider">Markdown Content</label>
+              <label className="text-[10px] font-bold text-zinc-455 dark:text-zinc-500 uppercase tracking-wider">Markdown Content</label>
               <textarea
                 placeholder="Write the guide content here..."
                 value={editContent}
                 onChange={(e) => setEditContent(e.target.value)}
-                className="w-full px-3 py-2 text-xs bg-zinc-50 dark:bg-zinc-955 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-900 dark:text-zinc-50 min-h-[120px] resize-y"
+                className="w-full px-3 py-2 text-xs bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-1 focus:ring-indigo-500 outline-none text-zinc-900 dark:text-zinc-50 min-h-[120px] resize-y"
               />
             </div>
 

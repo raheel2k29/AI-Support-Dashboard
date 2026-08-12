@@ -63,7 +63,7 @@ export const OverviewView: React.FC = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-55 leading-none">{stat.value}</h4>
+                <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 leading-none">{stat.value}</h4>
                 <div className="flex items-center gap-1 mt-2">
                   <span className={`text-xs font-semibold px-1.5 py-0.5 rounded-full ${
                     stat.trend === 'up' && stat.label.includes('Time')
@@ -89,8 +89,8 @@ export const OverviewView: React.FC = () => {
         <div className="lg:col-span-2 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex flex-col shadow-xs">
           <div className="flex items-center justify-between pb-4 border-b border-zinc-100 dark:border-zinc-900">
             <div>
-              <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-55">Conversation Activity</h4>
-              <p className="text-xs text-zinc-450 dark:text-zinc-500">Volume of customer requests vs. automated resolutions</p>
+              <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">Conversation Activity</h4>
+              <p className="text-xs text-zinc-400 dark:text-zinc-500">Volume of customer requests vs. automated resolutions</p>
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400">
@@ -159,8 +159,8 @@ export const OverviewView: React.FC = () => {
         {/* Top Issues List */}
         <div className="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex flex-col shadow-xs">
           <div>
-            <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-55">Top Issue Categories</h4>
-            <p className="text-xs text-zinc-450 dark:text-zinc-505">Most frequent topics needing response</p>
+            <h4 className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">Top Issue Categories</h4>
+            <p className="text-xs text-zinc-450 dark:text-zinc-400">Most frequent topics needing response</p>
           </div>
           <div className="mt-5 space-y-4 flex-1">
             {topIssues.map((issue, idx) => (
@@ -260,7 +260,7 @@ export const OverviewView: React.FC = () => {
                         AI Helper
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1 text-xs font-medium text-zinc-550 dark:text-zinc-450">
+                      <span className="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 dark:text-zinc-400">
                         <UserCheck className="w-3 h-3 shrink-0" />
                         Human
                       </span>

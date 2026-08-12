@@ -84,7 +84,7 @@ export const AnalyticsView: React.FC = () => {
       
       {/* Date Filter Toolbar */}
       <div className="flex items-center justify-between p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-xs">
-        <div className="flex items-center gap-2 text-xs font-semibold text-zinc-550 dark:text-zinc-400">
+        <div className="flex items-center gap-2 text-xs font-semibold text-zinc-500 dark:text-zinc-400">
           <Calendar className="w-4 h-4 text-indigo-500 shrink-0" />
           <span>Timeline Analytics</span>
         </div>
@@ -117,7 +117,7 @@ export const AnalyticsView: React.FC = () => {
           <div key={idx} className="p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-xs flex flex-col gap-2">
             <span className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">{m.label}</span>
             <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">{m.value}</h4>
-            <span className="text-[10px] text-zinc-400 dark:text-zinc-505 font-medium">{m.desc}</span>
+            <span className="text-[10px] text-zinc-400 dark:text-zinc-400 font-medium">{m.desc}</span>
           </div>
         ))}
       </div>
@@ -181,7 +181,7 @@ export const AnalyticsView: React.FC = () => {
               />
             </svg>
           </div>
-          <div className="flex justify-between items-center text-[10px] text-zinc-400 dark:text-zinc-505 font-medium mt-3 px-1">
+          <div className="flex justify-between items-center text-[10px] text-zinc-450 dark:text-zinc-500 font-medium mt-3 px-1">
             {activeData.chartPoints.map((pt, i) => (
               <span key={i}>{pt.label}</span>
             ))}
@@ -257,7 +257,7 @@ export const AnalyticsView: React.FC = () => {
             {activeData.topics.map((t, idx) => (
               <div key={idx} className="space-y-1.5">
                 <div className="flex items-center justify-between text-xs font-semibold">
-                  <span className="text-zinc-700 dark:text-zinc-350 truncate">{t.name}</span>
+                  <span className="text-zinc-700 dark:text-zinc-300 truncate">{t.name}</span>
                   <span className="text-zinc-500 dark:text-zinc-450 shrink-0 font-bold">{t.count} items</span>
                 </div>
                 <div className="h-1.5 w-full bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">

@@ -124,7 +124,7 @@ export const CustomersView: React.FC = () => {
                       {cust.name}
                     </span>
                   </td>
-                  <td className="py-3.5 px-4 text-zinc-550 dark:text-zinc-400 font-medium">
+                  <td className="py-3.5 px-4 text-zinc-500 dark:text-zinc-400 font-medium">
                     {cust.email}
                   </td>
                   <td className="py-3.5 px-4">
@@ -187,7 +187,7 @@ export const CustomersView: React.FC = () => {
                   <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-50 leading-none">
                     {selectedCustomer.name}
                   </h3>
-                  <span className="text-[11px] text-zinc-400 dark:text-zinc-550 block mt-1.5">
+                  <span className="text-[11px] text-zinc-400 dark:text-zinc-500 block mt-1.5">
                     ID: {selectedCustomer.id}
                   </span>
                 </div>
@@ -204,14 +204,14 @@ export const CustomersView: React.FC = () => {
             <div className="grid grid-cols-2 gap-3">
               <div className="p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-150 dark:border-zinc-850/50 flex flex-col">
                 <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold">Subscription</span>
-                <span className="font-bold text-zinc-700 dark:text-zinc-350 mt-1 flex items-center gap-1">
+                <span className="font-bold text-zinc-700 dark:text-zinc-300 mt-1 flex items-center gap-1">
                   <CreditCard className="w-3.5 h-3.5 text-indigo-500" />
                   {selectedCustomer.plan}
                 </span>
               </div>
               <div className="p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-150 dark:border-zinc-850/50 flex flex-col">
                 <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold">Lifetime LTV</span>
-                <span className="font-bold text-zinc-700 dark:text-zinc-350 mt-1 flex items-center gap-1">
+                <span className="font-bold text-zinc-700 dark:text-zinc-300 mt-1 flex items-center gap-1">
                   <DollarSign className="w-3.5 h-3.5 text-emerald-500" />
                   {selectedCustomer.ltv}
                 </span>
@@ -257,8 +257,8 @@ export const CustomersView: React.FC = () => {
                 ) : (
                   selectedCustomer.activityLog.map((log) => (
                     <div key={log.id} className="relative">
-                      <span className="absolute -left-[21px] top-1 w-2.5 h-2.5 bg-zinc-200 dark:bg-zinc-800 rounded-full border-2 border-white dark:border-zinc-950" />
-                      <span className="text-[10px] text-zinc-400 dark:text-zinc-505 block">{log.date}</span>
+                      <span className="absolute -left-[21px] top-1 w-2.5 h-2.5 bg-zinc-200 dark:bg-zinc-800 rounded-full border-2 border-white dark:border-zinc-955" />
+                      <span className="text-[10px] text-zinc-400 dark:text-zinc-500 block">{log.date}</span>
                       <p className="text-zinc-650 dark:text-zinc-300 font-medium mt-1 leading-relaxed">{log.action}</p>
                     </div>
                   ))
