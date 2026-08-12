@@ -54,7 +54,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <img 
               src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'} 
               alt="AssistlyAI" 
-              className="h-10 object-contain" 
+              className="h-14 object-contain" 
             />
           </div>
           <button className="p-1 rounded-md text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-600 dark:hover:text-zinc-200">
